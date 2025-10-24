@@ -1,3 +1,3 @@
 git add .
-git commit -m "HTML_M"
+git commit -m "HTML올리기"
 git push
