@@ -8,8 +8,8 @@
         *{margin: 0; box-sizing: border-box;}
         ul,ol,li {list-style: none; margin: 0; padding:0;}
 
-        header {width: 1500px; height: 80px;  margin: 0 auto;}
-        #slider {width:1500px; height: 800px; margin: 0 auto;}
+        header {width: 100%; height: 100%;  margin: 0 auto;}
+        #slider {width:100%; height: 100%; margin: 0 auto;}
             #slider > img {width:100%; height: 100%;}
          #bset {width:1200px; height: 200px;  margin: 0px  auto;}
              #bset>h3 {margin-top: 70px; text-align: center; font-size: 40px;}
@@ -24,13 +24,14 @@
         nav > ul > li {float: left; margin: 0 40px;}
         nav > ul > li > a {text-decoration: none; color: rgb(233, 225, 225);}
         nav > ul > li > a:hover {color: white;}
-        section{width: 1280px; height: 1500px; background-color: wheat; margin: 0 auto;}
+        section{width: 1280px; height: 1500px; background-color: wheat; margin: 0 auto; }
         div {margin-bottom: 50px; color: #000;}
         #Fruit {width: 350px; height: 400px; text-align: center; float: left; margin: 20px 38px 50px;}
-            #Fruit>a {margin-bottom: 50px;}
-            #Fruit>img {width: 80%; margin: 0 30px 0;}
-            #Fruit>h5 {margin-top: 10px; }
-            #Fruit>P {margin-top: 10px; }
+            #Fruit>a {margin-bottom: 50px; }
+            #Fruit>img {width: 80%; margin: 0 30px 0; cursor: pointer;}
+            #Fruit>img:hover {width: 100%; margin: 0 30px 0;}
+            #Fruit>h5 {margin-top: 10px; font-size: 25px; }
+            #Fruit>P,span {margin-top: 10px; font-size: 20px;}
          footer {width: 100%; height: 70px; background-color: rgb(43, 42, 38); margin: 0 auto; text-align: center;}
            footer>p {color: rgb(255, 255, 255);padding: 20px 0px; margin: 80px 0 0 0 ;}
     </style>
@@ -39,9 +40,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="http://127.0.0.1:5500/20.%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80/1.html#">과일농장</a></li>
-                <li><a href="https://sinaboro.github.io/fruit">홈으로</a></li>
-                <li><a href="https://sinaboro.github.io/fruit/detail/1">상세페이지</a></li>
+                <li><a href="#">과일농장</a></li>
+                <li><a href="#">홈으로</a></li>
+                <li><a href="#">상세페이지</a></li>
                 <li><a href="#">장바구니</a></li>
                 <li><a href="#">회사소개</a></li>
                 <li><a href="#">게시판</a></li>
@@ -56,21 +57,25 @@
     <div id = "bset">
         <h3>햇과일 BEST
             <p>농부가 추천하는 제철과일을 만나보세요.</p>
-        </h3>    
+        </h3>   
+        <div class="row">
         <input type="text" placeholder="상품명을 입력하세요">
-        <div class = "col-md-6">
-            <select>
-                <option value>정렬 선택</option>
-                <option value="low">낮은 가격순</option>
-                <option value="high">높은 가격순</option>
-                <option value="name">이름순</option>
-            </select>
-        </div>
+        <button type="button" class="btn btn-out line-success">검색</button>
+            <div class = "col-md-6">
+                <select>
+                    <option value>정렬 선택</option>
+                    <option value="low">낮은 가격순</option>
+                    <option value="high">높은 가격순</option>
+                    <option value="name">이름순</option>
+                </select>
+            </div>
+        </div>    
     </div>  
     
 
     <section>
-        <div id="Fruit">
+        <div a id="Fruit">
+            <a href="D:\works\HTML\20.홈페이지\수박.html" ></a>
             <img src="https://sinaboro.github.io/fruit/img/fruit1.jpg">
             <h5>수박</h5>
             <P>당도선별 프리미엄 고당도 하우스수박 5~6kg</P>
