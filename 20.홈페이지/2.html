@@ -1,179 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/fruit/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#00000">
-    <meta name="description" content="Web site created using create-react-app">
-    <link rel="apple-touch-icon" href="/fruit/logo192.png">
-    <link rel="manifest" href="/fruit/manifest.json">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-            crossorigin="anonymous">
-    <title>React App</title>
-    <script defer="defer" src="/fruit/static/js/main.ee3de923.js"></script>
-    <link href="/fruit/static/css/main.9b3f3405.css" rel="stylesheet">
-</head>
-<body>
-    <noscript>You need to enable JavaScript to run this app</noscript>
-    <div id = "root">
-        <div class="App"> 
-            <style> 
-                nav>div {text-align: center;}
-                nav>div>.a {text-decoration: none; color: rgb(233, 225, 225);}
-            </style>
-            <nav class="navbar navbar-expand-dark bg-dark">
-                <div class="container">
-                    <span class="navbar-brand">과일농장</span>
-                    <div class="me-auto navbar-nav">
-                        <a role="button" class="nav-link" tabindex="0"href="#">홈으로</a>
-                        <a role="button" class="nav-link" tabindex="0"href="#">상세페이지</a>
-                        <a role="button" class="nav-link" tabindex="0"href="#">장바구니</a>
-                        <a role="button" class="nav-link" tabindex="0"href="#">회사소개</a>
-                        <a role="button" class="nav-link" tabindex="0"href="#">게시판</a>
-                    </div>
-                </div>
-            </nav>
-        <div>
-            <div class="slider">
-                 <style> .slider>img {width:100%; height: 100%; margin: 0 auto;} </style>
-                <img src="/20.홈페이지/img/slider.jpg">
-            </div>
-            <h3 style="margin-top: 70px; text-align: center;">햇과일 BEST</h3>
-            <p style="text-align: center;">농부가 추천하는 제철과일을 만나보세요.</p>
-            <div class="container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6" style="text-align: left;">
-                        <input placeholder="상품명을 입력하세요" value style="padding: 10px; margin-left: 10px;
-                            border-radius: 4px; border: 1px solid rgb(204,204,204); width: 250px; margin-right: 10px;">
-                        </div>    
-                        <div class="col-md-6" style="text-align: left;">
-                            <select style="padding: 10px; margin-left: 10px; border-radius: 4px; border: 1px solid rgb(204, 204, 204); width: 150px;">
-                                <option value>정렬 선택</option>
-                                <option value>낮은 가격순</option>
-                                <option value>높은 가격순</option>
-                                <option value>이름순</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>      
-                    <div class="container" style="margin-top: 30px;">
-                        <div class="row">
-                            <div class="clo-md-4" style="margin-bottom: 50px;">
-                                <a role="button" class="c1 nav-link" tabindex="0" href="#">
-                                    <img src="https://sinaboro.github.io/fruit/img/fruit1.jpg" width="80%">
-                                    <h5 style="margin-top: 10px;">수박</h5>
-                                    <P>당도선별 프리미엄 고당도 하우스수박 5~6kg</P>
-                                    <span>29000</span>
-                                </a>
-                            </div>
-                          
-                            <div class="clo-md-4" style="margin-bottom: 50px;">
-                                <a role="button" class="c1 nav-link" tabindex="0" href="#">
-                                    <img src="https://sinaboro.github.io/fruit/img/fruit2.jpg" width="80%">
-                                    <h5 style="margin-top: 10px;">참외</h5>
-                                    <P>산지직송 성주 달콤참외</P>
-                                    <span>16900</span>
-                                </a>
-                            </div>
-                            <div class="clo-md-4" style="margin-bottom: 50px;">
-                                <a role="button" class="c1 nav-link" tabindex="0" href="#">
-                                    <img src="https://sinaboro.github.io/fruit/img/fruit3.jpg" width="80%">
-                                    <h5 style="margin-top: 10px;">사과</h5>
-                                    <P>고씨네농장 고당도 청송사과, 햇부사 5kg</P>
-                                    <span>13000</span>
-                                </a>
-                            </div>
-                            <div class="clo-md-4" style="margin-bottom: 50px;">
-                                <a role="button" class="c1 nav-link" tabindex="0" href="#">
-                                    <img src="https://sinaboro.github.io/fruit/img/fruit4.jpg" width="80%">
-                                    <h5 style="margin-top: 10px;">바나나</h5>
-                                    <P>델몬트 필리핀 바나나 6kg</P>
-                                    <span>15000</span>
-                                </a>
-                            </div>
-                            <div class="clo-md-4" style="margin-bottom: 50px;">
-                                <a role="button" class="c1 nav-link" tabindex="0" href="#">
-                                    <img src="https://sinaboro.github.io/fruit/img/fruit5.jpg" width="80%">
-                                    <h5 style="margin-top: 10px;">딸기</h5>
-                                    <P>설향 딸기, 킹스베리 1박스</P>
-                                    <span>14500</span>
-                                </a>
-                            </div>
-                            <div class="clo-md-4" style="margin-bottom: 50px;">
-                                <a role="button" class="c1 nav-link" tabindex="0" href="#">
-                                    <img src="https://sinaboro.github.io/fruit/img/fruit6.jpg" width="80%">
-                                    <h5 style="margin-top: 10px;">오렌지</h5>
-                                    <P>캘리포니아 네이블 오렌지 4kg</P>
-                                    <span>17000</span>
-                                </a>
-                            </div>
-                            <div class="clo-md-4" style="margin-bottom: 50px;">
-                                <a role="button" class="c1 nav-link" tabindex="0" href="#">
-                                    <img src="https://sinaboro.github.io/fruit/img/fruit7.jpg" width="80%">
-                                    <h5 style="margin-top: 10px;">토마토</h5>
-                                    <P>행복한 농부 완숙토마토 5kg</P>
-                                    <span>20000</span>
-                                </a>
-                            </div>
-                            <div class="clo-md-4" style="margin-bottom: 50px;">
-                                <a role="button" class="c1 nav-link" tabindex="0" href="#">
-                                    <img src="https://sinaboro.github.io/fruit/img/fruit8.jpg" width="80%">
-                                    <h5 style="margin-top: 10px;">포도</h5>
-                                    <P>팜앤프릇 프리미엄 아삭한 애플청포도</P>
-                                    <span>25000</span>
-                                </a>
-                            </div>
-                            <div class="clo-md-4" style="margin-bottom: 50px;">
-                                <a role="button" class="c1 nav-link" tabindex="0" href="#">
-                                    <img src="https://sinaboro.github.io/fruit/img/fruit1.jpg" width="80%">
-                                    <h5 style="margin-top: 10px;">망고</h5>
-                                    <P>프리미엄 제주애플망고 1박스</P>
-                                    <span>18500</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div style="text-align: center;">
-                                    <h3 style="margin-top: 70px;">채소.야채 TOP</h3>
-                                    <p>청정지역, 황토밭에서 자란 건강식품</p>
-                                    <button type="button" class="btn btn-out line-success">+3개 상품 더 보기</button>
-                                    <div class="container" style="margin-top: 30px;">
-                                        <div class="row">
-                                            <div class="col-md-4" style="margin-bottom: 50px;">
-                                                <img src="https://sinaboro.github.io/fruit/img/veggie/veggie1.jpg" width="80%">
-                                                <h5 style="margin-top: 10px;"> 당근</h5>
-                                                <span>국내산 햇당근 1kg</span>
-                                                <p>11900</p>
-                                            </div>
-                                            <div class="col-md-4" style="margin-bottom: 50px;">
-                                                <img src="https://sinaboro.github.io/fruit/img/veggie/veggie2.jpg" width="80%">
-                                                <h5 style="margin-top: 10px;"> 옥수수</h5>
-                                                <span>쫀득쪽득 찰옥수수 250g</span>
-                                                <p>29000</p>
-                                            </div>
-                                            <div class="col-md-4" style="margin-bottom: 50px;">
-                                                <img src="https://sinaboro.github.io/fruit/img/veggie/veggie3.jpg" width="80%">
-                                                <h5 style="margin-top: 10px;"> 감자</h5>
-                                                <span>강원도 두백산 수미 감자</span>
-                                                <p>30000</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-            </div>
-        </div>
-        <p style="color: rgb(255, 255, 255); 
-            background-color: rgb(0, 0, 0); padding: 20px; margin-top: 80px;">
-            COPYRLCHT(C) 2025 과일농장, Inc. All Rights Reserved</p>
-        </div>
-    </div>
-</body>
-</html>
+package unit05;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/paramServLet")
+public class paramServLet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+		response.setContentType("text/html; charset=utf-8");
+		
+		String id = requestsetParameter("id");
+		int age = Integer.parseInt(requestsetParameter("age"));
+		String email = requestsetParameter("email");
+		String tel = requestsetParameter("tel");
+		String number = requestsetParameter("number");
+		String password = requestsetParameter("password");
+		
+		
+		PrintWriter out = response.getWriter();
+		
+		
+	}
+}
